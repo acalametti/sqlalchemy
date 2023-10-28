@@ -17,7 +17,7 @@ What you need:
 
 Project Steps: 
 
--  Start by creating engine to hawaii.sqlite and reflect the database and tables using automap base
+-  Start by creating engine to hawaii.sqlite in the climate_starter code and reflect the database and tables using automap base
 -  Save references for each table and create the session
 -  Find the most recent data point in the database and use this to pull the last 12 months of data
 -  Query the database to finde the precipitation score data, save as a pd.DataFrame and plot with Matplotlib
@@ -31,3 +31,14 @@ Project Steps:
    ![Screen Shot 2023-10-28 at 12 59 27 PM](https://github.com/acalametti/sqlalchemy/assets/136642574/99ba107f-ac00-463f-9819-255e62b9e3fc)
 
 
+-  In the app.py set up the database similar to in the climate_starter by creating the engine, adding the tables, saving references to classes, and creating the engine
+- Copy the code for finding the last 12 months of data into the Database Setup section
+- Set up Flask Routes on the home page of the webpage to the precipitation, station, and tobs JSONs as well as a page that returns the avg, min, and max temp of a specified data
+- Run flask in the terminal and follow the link to the homepage created
+
+![Screen Shot 2023-10-28 at 1 12 17 PM](https://github.com/acalametti/sqlalchemy/assets/136642574/7e3c2deb-424f-449b-91f2-f541d61b4ca7)
+
+
+Outside Contributors: 
+
+Big thank you to Geronimo Perez for all of his help setting up the Flask routes! 
