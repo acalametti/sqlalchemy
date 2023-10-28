@@ -56,11 +56,11 @@ def precipitation():
     session = Session(engine)
 
     #perform query
-
+    results = d:p for d,p in session.query(M.date, M.prcp).filter(M.date>=pre_year).all() 
     #close session
-    # session.close()
+    session.close()
     
-    return { d:p for d,p in session.query(M.date, M.prcp).filter(M.date>=pre_year).all() }
+    return jsonify (results)
 
 @app.route("/api/v1.0/stations")
 def stations():
